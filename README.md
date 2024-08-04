@@ -9,15 +9,15 @@ It handles DPI connected using optical splitter or port mirroring (**Passive DPI
 
 # Quick start
 
-* **For Russia**: Download [latest version from Releases page](https://github.com/ValdikSS/GoodbyeDPI/releases), unpack the file and run **1_russia_blacklist_dnsredir.cmd** script.
-* For other countries: Download [latest version from Releases page](https://github.com/ValdikSS/GoodbyeDPI/releases), unpack the file and run **2_any_country_dnsredir.cmd**.
+* **For Russia**: Download [latest version from Releases page](https://github.com/ValdikSSS/GoodbyeDPI/releases), unpack the file and run **1_russia_blacklist_dnsredir.cmd** script.
+* For other countries: Download [latest version from Releases page](https://github.com/ValdikSSS/GoodbyeDPI/releases), unpack the file and run **2_any_country_dnsredir.cmd**.
 
 These scripts launch GoodbyeDPI in recommended mode with DNS resolver redirection to Yandex DNS on non-standard port (to prevent DNS poisoning).  
 If it works — congratulations! You can use it as-is or configure further.
 
 # How to use
 
-Download [latest version from Releases page](https://github.com/ValdikSS/GoodbyeDPI/releases) and run.
+Download [latest version from Releases page](https://github.com/ValdikSSS/GoodbyeDPI/releases) and run.
 
 ```
 Usage: goodbyedpi.exe [OPTION...]
@@ -133,10 +133,6 @@ Check examples in `service_install_russia_blacklist.cmd`, `service_install_russi
 Modify them according to your own needs.
 
 # Known issues
-
-* Horribly outdated Windows 7 installations are not able to load WinDivert driver due to missing support for SHA256 digital signatures. Install KB3033929 [x86](https://www.microsoft.com/en-us/download/details.aspx?id=46078)/[x64](https://www.microsoft.com/en-us/download/details.aspx?id=46148), or better, update the whole system using Windows Update.
-* ~~Some SSL/TLS stacks unable to process fragmented ClientHello packets, and HTTPS websites won't open. Bug: [#4](https://github.com/ValdikSS/GoodbyeDPI/issues/4), [#64](https://github.com/ValdikSS/GoodbyeDPI/issues/64).~~ Fragmentation issues are fixed in v0.1.7.
-* ~~ESET Antivirus is incompatible with WinDivert driver [#91](https://github.com/ValdikSS/GoodbyeDPI/issues/91). This is most probably antivirus bug, not WinDivert.~~
 
 
 # Similar projects
